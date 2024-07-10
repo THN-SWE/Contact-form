@@ -1,0 +1,144 @@
+:root {
+  --neon-red: #ff0000;
+  --neon-green: #49ff00;
+  --neon-orange: #ff9300;
+  --neon-yellow: #fbff00;
+
+  --font-head: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Bg.jpg);
+    background-size: contain;
+  
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  background-color: var(--neon-orange);
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: --font-head;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+#contact-us-btn {
+  padding: 10px;
+
+  color: white;
+ 
+
+}
+
+
+#contact-us-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: center; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  
+  width: 70vw;
+  padding: 35px;
+  border-radius: 10px;
+
+}
+
+#contact-us-form.hidden {
+  display: none;
+ 
+}
+
+#contact-us-btn.hidden {
+  /* display: none; */
+  
+}
+
+#form-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #ff9300;
+  font-family: var(--font-head);
+  font-weight: bolder;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#caption {
+  color: #fbff00;
+  text-align: center;
+  font-family: var(--font-head);
+}
+
+input {
+  background-color: black;
+  font-family: var(--font-head);
+  color: var(--neon-yellow);
+  height: 5vh;
+}
+label {
+  font-family: var(--font-head);
+  font-size: small;
+  color: white;
+}
+
+textarea {
+  background-color: black;
+  color: var(--neon-yellow);
+  font-family: var(--font-head);
+  height: 10vh;
+}
+
+
+form > button {
+  width: 100px;
+  margin: 0 auto;
+}
+.error-message{
+    color:var(--neon-red);
+    font-family: var(--font-head);
+}
+
+#name-error.hidden{
+    display: none;
+}
+#address-error.hidden{
+    display: none;
+}
+#phone-error.hidden{
+    display: none;
+}
+#email-error.hidden{
+    display: none;
+}
+#message-error.hidden{
+    display: none;
+}
+@media (width > 992px) {
+  #contact-us-form {
+    width: 50vw;
+    /* min-height: 5vh; */
+  }
+  body{
+    /* background-size:cover;    */
+    background-size: contain;
+    background-repeat:round;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="main">
+      <button type="button" id="contact-us-btn" class="hidden">Contact us</button>
+      <div id="contact-us-form" class="hidden">
+        <div id="form-close-btn">X</div>
+        <div id="form-header">
+          <h3 id="caption">Let's Get In Touch</h3>
+        </div>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <span class="error-message hidden" id="name-error">Enter a valid name (only letters allowed)</span><br />
+
+          <label for="address">Address:</label>
+          <input id="address" name="address" ></input>
+          <span class="error-message hidden" id="address-error">Enter a valid address</span><br />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" />
+          <span class="error-message hidden" id="phone-error">Phone number should start with +94 and have exactly 9 numbers after</span><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <span class="error-message hidden" id="email-error">Enter a valid email</span><br />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          <span class="error-message hidden" id="message-error">Message should have no less than 10 characters</span><br />
+
+          <button type="submit" value="Submit" id="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
